@@ -1,0 +1,109 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: pink;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h1,
+p {
+    color: #525e58;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.board {
+    width: 308px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #525e58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #525e58;
+    font-weight: bold;
+}
+
+#square-0,
+#square-1,
+#square-2 {
+    border-top: none;
+}
+
+#square-0,
+#square-3,
+#square-6 {
+    border-left: none;
+}
+
+#square-2,
+#square-5,
+#square-8 {
+    border-right: none;
+}
+
+#square-6,
+#square-7,
+#square-8 {
+    border-bottom: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    gap: 6em;
+    padding: 0.5em;
+}
+
+.side {
+    width: 400px;
+    text-align: center;
+}
+
+#newGame {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#newGame,
+#bot {
+    width: 32%;
+    background-color: #525e58;
+    border: none;
+    padding: 0.7em 1.5em;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.3em;
+}
+
+#newGame:hover,
+#bot:hover {
+    color: #525e58;
+    background-color: #fff;
+}
+
+@media (min-width:850px) {
+    .flex {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
